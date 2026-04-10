@@ -1,0 +1,15 @@
+# Fichiers temporaires Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Dossiers de compilation
+.buildozer/
+bin/
+
+# Base de données locale (si tu ne veux pas la push)
+*.db
+*.sqlite3
+
+# Fichiers Kivy
+*.kvc
