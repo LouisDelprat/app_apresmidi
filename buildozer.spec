@@ -33,6 +33,12 @@ ios.kivy_ios_branch = master
 # Version minimum iOS
 ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
 ios.ios_deploy_branch = 1.12.2
+# (bool) Autoriser la signature du code (Désactivé pour utiliser Sideloadly)
+ios.codesign.allowed = no
+
+# (str) Nom du certificat (Même désactivé, Buildozer a besoin que ces variables existent)
+ios.codesign.debug = "iPhone Developer: <nom>"
+ios.codesign.release = %(ios.codesign.debug)s
 
 [buildozer]
 # Niveau de log (2 = debug)
